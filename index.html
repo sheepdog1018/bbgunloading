@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BB Guns Quick Reference</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Righteous&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #121212;
+      --card-bg: #1e1e1e;
+      --text: #a3ffce;       /* Muted neon green */
+      --accent: #7efcff;     /* Muted neon cyan */
+      --accent2: #ff7eff;    /* Muted neon magenta */
+      --list: #ffd86f;       /* Muted neon amber for list items */
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Righteous', cursive;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem;
+    }
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: var(--accent);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    @media (min-width: 600px) { .grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 900px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+    .card {
+      background: var(--card-bg);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s;
+	  padding: 20px;
+    }
+    .card:hover { transform: translateY(-4px); }
+    .card img { width: 100%; height: auto; object-fit: contain; }
+    .card-content {
+      padding: 1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+	img {
+	 border-radius: 35px;
+	}
+    .card-content h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      color: var(--accent2);
+    }
+    .steps {
+      margin-top: 0.5rem;
+      padding-left: 1.5rem;
+    }
+    .steps li {
+      margin-bottom: 0.5rem;
+      color: var(--list);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>BB Guns Quick Reference</h1>
+    <div class="grid">
+      <!-- Legends M3 Grease Gun -->
+      <div class="card">
+        <img src="https://i.postimg.cc/rpZH2svM/m3greasegun.jpg" alt="Legends M3 Grease Gun">
+        <div class="card-content">
+          <h2>Legends M3 Grease Gun</h2>
+          <ol class="steps">
+            <li>Pull down and remove the 30‑round magazine.</li>
+            <li>Unscrew CO₂ cap; insert 12 g capsule; tighten.</li>
+            <li>Load up to 30 BBs; reinsert magazine.</li>
+            <li>Pull charging handle to chamber.</li>
+            <li>Hold trigger for full‑auto fire.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Umarex Steel‑Strike -->
+      <div class="card">
+        <img src="https://i.postimg.cc/JhzFFZYp/umarexsteelstrike.jpg" alt="Umarex Steel-Strike">
+        <div class="card-content">
+          <h2>Umarex Steel‑Strike</h2>
+          <ol class="steps">
+            <li>Remove magazine.</li>
+            <li>Unscrew CO₂ cap; insert 12 g capsule; tighten.</li>
+            <li>Open BB hatch; load six BBs; close hatch.</li>
+            <li>Reinsert magazine; rack charging handle to index.</li>
+            <li>Pull trigger for 6‑shot burst.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- H&K MP5K-PDW -->
+      <div class="card">
+        <img src="https://i.postimg.cc/gJwTzdWR/mp5kpdw.png" alt="H&K MP5K-PDW">
+        <div class="card-content">
+          <h2>H&K MP5K‑PDW</h2>
+          <ol class="steps">
+            <li>Remove 40‑round magazine.</li>
+            <li>Unscrew CO₂ cap; insert 12 g capsule; tighten.</li>
+            <li>Load up to 40 BBs; reinsert magazine.</li>
+            <li>Pull charging handle to chamber.</li>
+            <li>Pull trigger per shot (semi‑auto).</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- SIG P229 -->
+      <div class="card">
+        <img src="https://i.postimg.cc/htrwMpsJ/sig229rx.jpg" alt="SIG P229">
+        <div class="card-content">
+          <h2>SIG P229</h2>
+          <ol class="steps">
+            <li>Remove grip sleeve; unscrew CO₂ cap; insert 12 g capsule; tighten.</li>
+            <li>Slide barrel catch to open breech.</li>
+            <li>Load one .177 pellet nose‑first; close breech.</li>
+            <li>Slap slide rearward to chamber.</li>
+            <li>Pull trigger for single shot.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Crosman PFAM9B -->
+      <div class="card">
+        <img src="https://i.postimg.cc/CLb9nFfs/Crosman-PFAM9-B.jpg" alt="Crosman PFAM9B">
+        <div class="card-content">
+          <h2>Crosman PFAM9B</h2>
+          <ol class="steps">
+            <li>Remove 20‑round magazine; unscrew CO₂ cap; insert 12 g capsule; tighten.</li>
+            <li>Load up to 20 BBs; reinsert magazine.</li>
+            <li>Rack slide fully to chamber and cock.</li>
+            <li>Hold trigger for full‑auto fire.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Umarex Glock 19 -->
+      <div class="card">
+        <img src="https://i.postimg.cc/Sxq3Ww6F/glockg19gen3.jpg" alt="Umarex Glock 19">
+        <div class="card-content">
+          <h2>Umarex Glock 19</h2>
+          <ol class="steps">
+            <li>Remove magazine; unscrew CO₂ cap; insert 12 g capsule; tighten.</li>
+            <li>Load up to 19 BBs; reinsert magazine.</li>
+            <li>Rack slide fully to chamber.</li>
+            <li>Pull trigger per shot (semi‑auto).</li>
+          </ol>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
